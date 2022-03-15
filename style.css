@@ -1,0 +1,82 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f9ea8f;
+    background-image: linear-gradient(315deg, #f9ea8f 0%, #aff1da 74%);
+}
+
+
+.calculator{
+    display: flex;
+    margin: auto;
+    flex-direction:column;
+    padding: 10px;
+    width: 500px;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    
+    
+}
+@media only screen and (max-width:600px) {
+    body{
+        background-color: black;
+    }
+    .container{
+        background-color: black;
+    }
+    .calculator{
+        width: 90vw;
+        height: 97vh;
+    }
+    table{
+        align-items: center;
+        height: 48vh;
+        position: absolute;
+        bottom: 20px;
+        width: 90vw;
+        padding: 2px !important;
+    }
+    
+}
+.input{
+    text-align: right;
+    padding: 0px 20px;
+    padding-bottom: 16px;
+    height: auto ;
+    min-height: 40px;
+    font-size: 36px;
+    word-wrap: break-word;
+}
+.previous-input{
+    text-align: right;
+    color: lightgray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    height: auto;
+    padding: 0px 18px;
+    padding-bottom: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-spacing: 1px;
+}
+td{
+    border: 1px solid;
+    border-color: rgb(19, 19, 19);
+    padding: 8px;
+    text-align: center;
+    height:40px;
+    width:20px;
+}
+.btn-char{
+    color: orangered;
+    border-color: rgb(19, 19, 19);
+}
+td:hover{
+    background-color: rgb(45, 46, 46);
+    cursor: pointer;
+}
+#ans-output{
+    height: 12px;
+}
